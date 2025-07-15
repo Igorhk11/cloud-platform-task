@@ -14,7 +14,7 @@ Please find the prerequisites for the Cloud-Platform-Task-App.
 
 - Kubernetes cluster (e.g., Minikube)
 - Helm 3+
--Docker installed and running
+- Docker installed and running
 
 Steps
 1. The first thing you would need to do is build and push Docker image:
