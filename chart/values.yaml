@@ -1,0 +1,20 @@
+replicaCount: 1
+
+image:
+  repository: igorhk/cloud-platform-task
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 8000
+
+livenessProbe:
+  httpGet:
+    path: /metrics
+    port: 8000
+
+readinessProbe:
+  httpGet:
+    path: /metrics
+    port: 8000
